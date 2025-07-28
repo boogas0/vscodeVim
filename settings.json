@@ -1,0 +1,75 @@
+{
+  "editor.formatOnSave": true,
+  "editor.suggest.insertMode": "replace",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "editor.linkedEditing": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 0.5,
+  "launch": {},
+  "[json]": {},
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "update.showReleaseNotes": false,
+  "workbench.activityBar.visible": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": false,
+  "editor.lineNumbers": "relative",
+  "vim.useSystemClipboard":true,
+
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    { "before": ["<C-h>"], "commands": [":bprevious"] },
+    { "before": ["<C-l>"], "commands": [":bnext"] },
+    { "before": ["<C-n>"],  "commands": [":tabnew"] },
+    { "before": ["<C-w>"],  "commands": [":tabclose"] },
+
+    { "before": [";"],  "after": [":"] },
+    { "before": ["a"],  "after": ["A"] },
+
+    { "before": ["<C-j>"],  "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["<C-k>"],  "commands": ["editor.action.moveLinesUpAction"] },
+
+    { "before": ["<Tab>"],  "commands":["editor.action.indentLines"] },
+    { "before": ["<S-Tab>"],  "commands":["editor.action.outdentLines"] },
+    
+    // splits
+    { "before": ["<leader>", "v"], "commands": [":vsplit"] },
+    { "before": ["<leader>", "s"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["<leader>", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    
+    // NICE TO HAVE
+    { "before": ["<C-f"], "commands": ["workbench.action.quickOpen"] },
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    { "before": ["<C-j>"],  "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["<C-k>"],  "commands": ["editor.action.moveLinesUpAction"] },
+    { "before": ["<Tab>"],  "commands":["editor.action.indentLines"] },
+    { "before": ["<S-Tab>"],  "commands":["editor.action.outdentLines"] },
+  ]
+}
