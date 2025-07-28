@@ -25,6 +25,14 @@
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
   },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditorInGroup",
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditorInGroup",
+  },
   // FILE TREE
   {
     "command": "workbench.action.toggleSidebarVisibility",
@@ -60,7 +68,6 @@
     "key": "d",
     "when": "filesExplorerFocus && !inputFocus"
   },
-
   // EXTRA
   {
     "key": "ctrl+shift+5",
