@@ -59,7 +59,7 @@
     "when": "explorerViewletFocus"
   },
   {
-    "key": "shift+n",
+    "key": "f12",
     "command": "workbench.action.newWindow",
     "when": "!explorerViewletFocus"
   },
@@ -76,5 +76,9 @@
   {
     "key": "ctrl+z",
     "command": "workbench.action.toggleZenMode"
+  }
+  {
+    "key": "shift+n",
+    "command": "-workbench.action.newWindow"
   }
 ]
