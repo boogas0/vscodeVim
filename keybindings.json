@@ -76,7 +76,7 @@
   {
     "key": "ctrl+z",
     "command": "workbench.action.toggleZenMode"
-  }
+  },
   {
     "key": "shift+n",
     "command": "-workbench.action.newWindow"
